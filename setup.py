@@ -19,9 +19,6 @@ def get_requirements(file_path: str) -> List[str]:
     return requirements
 
 
-pippo = get_requirements("requirements.txt")
-pippo.remove("seaborn")
-
 setup(
     name="ml_project",
     version="0.0.1",
