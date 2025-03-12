@@ -6,4 +6,5 @@ scipy
 matplotlib
 xgboost
 # catboost
+dill
 # -e .
