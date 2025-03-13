@@ -51,7 +51,7 @@ class DataIngestion:
 
             # put train data and test data to "artifacts\train.csv" and "artifacts\test.csv"
             train_set.to_csv(train_data_path, index=False, header=True)
-            train_set.to_csv(test_data_path, index=False, header=True)
+            test_set.to_csv(test_data_path, index=False, header=True)
             logging.info("Data ingestion completed")
 
             # directly pass to DataTransformation in future ...
