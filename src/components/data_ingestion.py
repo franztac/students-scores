@@ -7,8 +7,11 @@ from src.components.data_transformation import (
     DataTransformation,
     DataTransformationConfig,
 )
+from src.components.model_trainer import ModelTrainerConfig, ModelTrianer
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
+
+os.environ["LOKY_MAX_CPU_COUNT"] = "4"
 
 
 @dataclass
@@ -68,3 +71,7 @@ if __name__ == "__main__":
     train_arr, test_arr, _ = data_transformation.initiate_data_transformation(
         train_data, test_data
     )
+
+    # model.pkl implementation
+    model_trainer = ModelTrianer()
+    print(model_trainer.initiate_model_trainer(train_arr, test_arr))
