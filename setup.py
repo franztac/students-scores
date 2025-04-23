@@ -20,7 +20,7 @@ def get_requirements(file_path: str) -> List[str]:
 
 
 setup(
-    name="ml_project",
+    name="student_scores",
     version="0.0.1",
     author="franz",
     author_email="fratacc91@gmail.com",
